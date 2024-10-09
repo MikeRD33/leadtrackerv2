@@ -66,7 +66,8 @@ deleteBtn.addEventListener("dblclick", function() {
 })
 
 inputBtn.addEventListener("click", function() {
-    push(referenceInDB, inputEl.value)
+    let newValue = "http://" + inputEl.value
+    push(referenceInDB, newValue)
     inputEl.value = ""
     
 })
